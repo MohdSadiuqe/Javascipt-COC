@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: grey;">
+    <script>
+        const dives=document.createElement("div")
+        console.log(dives);
+        dives.className="main";
+        // dives.id="myid"
+        dives.id=Math.round(Math.random()*10+1);
+        dives.setAttribute("title","generaterTitle")
+        dives.style.backgroundColor="green";
+        dives.style.padding="13px";
+        // dives.innerHTML="chai aur code"
+        const text=document.createTextNode("char aur code");
+        dives.appendChild(text)
+        document.body.appendChild(dives)
+    </script>
+</body>
+</html>

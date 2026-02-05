@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> hello Saad</h1>
+    <button id="button">click</button>
+    <script>
+        const settime=(function(){
+            console.log("log in");
+        });
+        const changeMe=setTimeout(settime,5000);
+        // const changetext=(function(){
+        //     document.querySelector("h1").innerHTML="hello saad world";
+        // })
+        // const changeMe=setTimeout(changetext,2000);
+        document.querySelector("button").addEventListener("click",function(){
+            clearTimeout(changeMe);
+            console.log("Stop");
+        })
+    </script>
+</body>
+</html>
